@@ -1,0 +1,32 @@
+/* MODAL=========================================== */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+
+  &__position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 470px;
+  }
+
+  &__close {
+    display: inline-block;
+    color: var(--light-grey);
+    margin-left: 92%;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

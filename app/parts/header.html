@@ -1,21 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/app.min.css">
-
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- styles -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/app.min.css" />
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/dist/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/dist/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/dist/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/dist/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./images/dist/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./images/dist/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-config" content="./images/dist/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<!-- js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./js/app.min.js" defer></script>
+	<title>Axit</title>
 </head>
 
 <body>
+
+	<!-- start HEADER =======================================================================-->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="#" class="header__logo-link">
+					<img class="header__logo-img" src="./images/dist/header/logo.svg" loading="lazy" alt="AXIT">
+				</a>
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menu-item"><a class="header__menu-link" href="#features">features</a></li>
+						<li class="header__menu-item header__menu-item_has-child">
+							<a class="header__menu-link" href="#about">About
+								<svg class="header__menu-img" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+									<title />
+									<g data-name="Layer 2" id="Layer_2">
+										<path
+											d="M23.05,22a1,1,0,0,0-1.41,0L17,26.56V3a1,1,0,1,0-2,0V26.53L10.47,22a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l6.37,6.37a.9.9,0,0,0,1.27,0l6.36-6.37A1,1,0,0,0,23.05,22Z" />
+									</g>
+								</svg>
+							</a>
+							<ul class="header__submenu">
+								<li class="header__submenu-item header__submenu-item_has-child">
+									<a class="header__submenu-link" href="#/">Сompany
+										<svg class="header__submenu-img" viewBox="0 0 32 32"
+											xmlns="http://www.w3.org/2000/svg">
+											<title />
+											<g data-name="Layer 2" id="Layer_2">
+												<path
+													d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z" />
+											</g>
+										</svg>
+									</a>
+									<ul class="header__sub-submenu">
+										<li class="header__sub-submenu-item"><a class="header__sub-submenu-link"
+												href="#">Reception</a></li>
+										<li class="header__sub-submenu-item"><a class="header__sub-submenu-link"
+												href="#">Management</a>
+										</li>
+										<li class="header__sub-submenu-item"><a class="header__sub-submenu-link"
+												href="#">Ticket offices</a>
+										</li>
+										<li class="header__sub-submenu-item"><a class="header__sub-submenu-link"
+												href="#">Schedule</a></li>
+									</ul>
+								</li>
+								<li class="header__submenu-item"><a class="header__submenu-link" href="#">Vacancies</a>
+								</li>
+								<li class="header__submenu-item"><a class="header__submenu-link" href="#">Services</a>
+								</li>
+								<li class="header__submenu-item"><a class="header__submenu-link"
+										href="#">Additionally</a></li>
+								<li class="header__submenu-item"><a class="header__submenu-link" href="#">Contacts</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#pricing">Pricing</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#reviews">Reviews</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#contact">Contact</a></li>
+						<label class="switch">
+							<input class="switch__input" type="checkbox" name="theme" value="dark">
+							<span class="switch__slider"></span>
+						</label>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end HEADER =======================================================================-->

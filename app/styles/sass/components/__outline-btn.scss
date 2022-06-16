@@ -1,0 +1,25 @@
+/* BTN =============================================== */
+
+.outline-btn {
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-light);
+  border: 2px solid var(--color-light);
+  transition: 0.3s;
+
+  @media (max-width: 1200px) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+}

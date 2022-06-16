@@ -1,0 +1,20 @@
+/* INPUT-FIELD ======================================= */
+
+.input-field {
+  width: 100%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--primary);
+  background: var(--white);
+
+  &::placeholder {
+    color: var(--light-grey);
+  }
+}
