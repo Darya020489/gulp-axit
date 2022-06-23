@@ -94,12 +94,21 @@
 						<li class="header__menu-item"><a class="header__menu-link" href="#pricing">Pricing</a></li>
 						<li class="header__menu-item"><a class="header__menu-link" href="#reviews">Reviews</a></li>
 						<li class="header__menu-item"><a class="header__menu-link" href="#contact">Contact</a></li>
-						<label class="switch">
-							<input class="switch__input" type="checkbox" name="theme" value="dark">
-							<span class="switch__slider"></span>
-						</label>
 					</ul>
 				</nav>
+				<label class="switch">
+					<input class="switch__input" type="checkbox" name="theme" value="dark">
+					<span class="switch__slider"></span>
+				</label>
+				<button class="burger header__burger">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</button>
+				<div class="close header__close">
+					<span class="close__line"></span>
+					<span class="close__line"></span>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -109,7 +118,7 @@
 	<section class="promo">
 		<div class="container">
 			<div class="promo__inner row">
-				<div class="promo__content col-7 col-md-10 col-xs-12">
+				<div class="promo__content col-7 col-lg-10 col-sm-12">
 					<div class="promo__logo">
 						<img class="promo__logo-img" src="./images/dist/promo/logo.png" loading="lazy" alt="AXIT">
 					</div>
@@ -117,7 +126,7 @@
 					<p class="promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<button id="promo-btn" class="promo__btn outline-btn" type="submit">Download</button>
 				</div>
-				<div class="promo__wrapper col-5 col-md-9 col-sm-10 col-xs-12">
+				<div class="promo__wrapper col-5 col-lg-9 col-md-10 col-sm-12">
 					<form class="form" action="#" method="POST">
 						<p class="form__title">Try Your <span class="form__title-accent">FREE</span> Trial Today</p>
 						<div class="form__list">
@@ -148,14 +157,14 @@
 		<div class="container">
 			<div class="social__info">
 				<div class="social__row row">
-					<div class="social__text col-5 col-md-12 col-xs-12">
+					<div class="social__text col-5 col-lg-12 col-sm-12">
 						<h2 class="social__title">Social Media</h2>
 						<p class="social__subtitle">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod bibendum laoreet.
 						</p>
 					</div>
-					<ul class="social__links col-7 col-md-12 col-xs-12">
+					<ul class="social__links col-7 col-lg-12 col-sm-12">
 						<li class="social__link"><a href="#"><img class="social__img"
 									src="./images/dist/social-svg/facebook-icon.svg" loading="lazy" alt="facebook"></a>
 							</1i>
@@ -166,10 +175,12 @@
 									src="./images/dist/social-svg/linkedin-icon.svg" loading="lazy" alt="linkedin"></a>
 							</1i>
 						<li class="social__link"><a href="#"><img class="social__img"
-									src="./images/dist/social-svg/pinterest-icon.svg" loading="lazy" alt="pinterest"></a>
+									src="./images/dist/social-svg/pinterest-icon.svg" loading="lazy"
+									alt="pinterest"></a>
 							</1i>
 						<li class="social__link"><a href="#"><img class="social__img"
-									src="./images/dist/social-svg/instagram-icon.svg" loading="lazy" alt="instagram"></a>
+									src="./images/dist/social-svg/instagram-icon.svg" loading="lazy"
+									alt="instagram"></a>
 							</1i>
 						<li class="social__link"><a href="#"><img class="social__img"
 									src="./images/dist/social-svg/github-icon.svg" loading="lazy" alt="github"></a></1i>
@@ -258,7 +269,7 @@
 					</p>
 				</div>
 				<div class="about__cards row">
-					<div class="about__card col-4 col-sm-6 col-xs-12">
+					<div class="about__card col-4 col-md-6 col-sm-12">
 						<div class="about__card-icon">
 							<img class="about__card-img" src="./images/dist/about/light-bulb.svg" loading="lazy"
 								alt="light-bulb" />
@@ -268,7 +279,7 @@
 							elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
 							viverra.</p>
 					</div>
-					<div class="about__card col-4 col-sm-6 col-xs-12">
+					<div class="about__card col-4 col-md-6 col-sm-12">
 						<div class="about__card-icon">
 							<img class="about__card-img" src="./images/dist/about/keyboard.svg" loading="lazy"
 								alt="keyboard" />
@@ -278,7 +289,7 @@
 							elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
 							viverra.</p>
 					</div>
-					<div class="about__card col-4 col-sm-6 col-xs-12">
+					<div class="about__card col-4 col-md-6 col-sm-12">
 						<div class="about__card-icon">
 							<img class="about__card-img" src="./images/dist/about/lightning.svg" loading="lazy"
 								alt="lightning" />
@@ -305,7 +316,7 @@
 				</p>
 			</div>
 			<div class="pricing__row row">
-				<div class="pricing__card pricing-card col-4 col-sm-6 col-xs-12">
+				<div class="pricing__card pricing-card col-4 col-md-6 col-sm-12">
 					<div class="pricing-card__title">Basic</div>
 					<div class="pricing-card__price">$10</div>
 					<div class="pricing-card__product">Free for life</div>
@@ -318,7 +329,7 @@
 						<li class="pricing-card__item">1 gb of space</li>
 					</ul>
 				</div>
-				<div class="pricing__card pricing-card pricing-card_active col-4 col-sm-6 col-xs-12">
+				<div class="pricing__card pricing-card pricing-card_active col-4 col-md-6 col-sm-12">
 					<div class="pricing-card__title">Optima</div>
 					<div class="pricing-card__price">$20</div>
 					<div class="pricing-card__product">Free for life</div>
@@ -331,7 +342,7 @@
 						<li class="pricing-card__item">1 gb of space</li>
 					</ul>
 				</div>
-				<div class="pricing__card pricing-card col-4 col-sm-6 col-xs-12">
+				<div class="pricing__card pricing-card col-4 col-md-6 col-sm-12">
 					<div class="pricing-card__title">Pro</div>
 					<div class="pricing-card__price">$30</div>
 					<div class="pricing-card__product">Free for life</div>
@@ -361,7 +372,7 @@
 				</p>
 			</div>
 			<div class="reviews__row row">
-				<div class="reviews__card col-4 col-sm-6 col-xs-12">
+				<div class="reviews__card col-4 col-md-6 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -370,14 +381,15 @@
 							quo suscipit.</p>
 					</div>
 					<div class="reviews__autor">
-						<img class="reviews__autor-icon" src="./images/dist/reviews/Davis.svg" loading="lazy" alt="Davis">
+						<img class="reviews__autor-icon" src="./images/dist/reviews/Davis.svg" loading="lazy"
+							alt="Davis">
 						<div class="reviews__autor-text">
 							<h3 class="reviews__autor-name">Davis Rhiel Madsen</h3>
 							<p class="reviews__autor-position">Manager</p>
 						</div>
 					</div>
 				</div>
-				<div class="reviews__card col-4 col-sm-6 col-xs-12">
+				<div class="reviews__card col-4 col-md-6 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -386,14 +398,15 @@
 							quo suscipit.</p>
 					</div>
 					<div class="reviews__autor">
-						<img class="reviews__autor-icon" src="./images/dist/reviews/Jadon.svg" loading="lazy" alt="Jadon">
+						<img class="reviews__autor-icon" src="./images/dist/reviews/Jadon.svg" loading="lazy"
+							alt="Jadon">
 						<div class="reviews__autor-text">
 							<h3 class="reviews__autor-name">DJaydon Rosser</h3>
 							<p class="reviews__autor-position">Manager</p>
 						</div>
 					</div>
 				</div>
-				<div class="reviews__card col-4 col-sm-6 col-xs-12">
+				<div class="reviews__card col-4 col-md-6 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -445,7 +458,7 @@
 			</div>
 			<form class="contact__form" action="#" method="POST">
 				<div class="row">
-					<div class="contact__form-block col-6 col-md-9 col-xs-12">
+					<div class="contact__form-block col-6 col-lg-9 col-sm-12">
 						<div class="contact__form-item">
 							<input class="contact__form-input input-field" type="text" id="name" name="user-name"
 								placeholder="Name">
@@ -459,7 +472,7 @@
 								placeholder="Password">
 						</div>
 					</div>
-					<div class="contact__form-block col-6 col-md-9 col-xs-12">
+					<div class="contact__form-block col-6 col-lg-9 col-sm-12">
 						<textarea class="contact__form-message input-field" name="message" id="text" cols="30" rows="10"
 							placeholder="Message"></textarea>
 					</div>
@@ -473,23 +486,27 @@
 
 	<!-- -- start MODAL ====================================== -->
 	<div id="modal" class="modal modal__position">
-		<form class="form modal__content col-5" action="#" method="POST">
+		<div class="modal__content">
 			<span class="modal__close">&times;</span>
-			<p class="form__title">Try Your <span class="form__title-accent">FREE</span> Trial Today</p>
-			<div class="form__list">
-				<div class="form__item">
-					<input class="form__input input-field" type="text" id="name" name="user_name" placeholder="Name">
+			<form class="form" action="#" method="POST">
+				<p class="form__title">Try Your <span class="form__title-accent">FREE</span> Trial Today</p>
+				<div class="form__list">
+					<div class="form__item">
+						<input class="form__input input-field" type="text" id="name" name="user_name"
+							placeholder="Name">
+					</div>
+					<div class="form__item">
+						<input class="form__input input-field" type="email" id="mail" name="user_name"
+							placeholder="Email">
+					</div>
+					<div class="form__item">
+						<input class="form__input input-field" type="password" id="pass" name="password"
+							placeholder="Password">
+					</div>
 				</div>
-				<div class="form__item">
-					<input class="form__input input-field" type="email" id="mail" name="user_name" placeholder="Email">
-				</div>
-				<div class="form__item">
-					<input class="form__input input-field" type="password" id="pass" name="password"
-						placeholder="Password">
-				</div>
-			</div>
-			<a id="myBtn" class="form__btn prime-btn" href="#">Get Started</a>
-		</form>
+				<a id="myBtn" class="form__btn prime-btn" href="#">Get Started</a>
+			</form>
+		</div>
 	</div>
 </main>
 <!-- end MODAL ====================================== -->
