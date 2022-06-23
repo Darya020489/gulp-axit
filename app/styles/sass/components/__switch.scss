@@ -5,6 +5,14 @@
   width: 60px;
   height: 24px;
 
+  @include breakpoint(md) {
+  margin-left: 110px;
+  }
+
+  @include breakpoint(sm) {
+  margin-left: 75px;
+  }
+
   &__input {
   opacity: 0;
   width: 0;
@@ -18,7 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 34px;
+  border-radius: 30px;
   background-color: #59595c;
   border: 1px solid var(--primary);
   transition: 0.4s;

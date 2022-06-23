@@ -15,9 +15,9 @@
   --mobile-padding: 16px;
   --gutter: 15px;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     --gutter: 10px;
-}
+  }
 }
 
 * {
@@ -29,10 +29,10 @@ html {
   font-size: 18px;
   line-height: 1.2;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     font-size: 14px;
     line-height: 1.1;
-}
+  }
 }
 
 html.dark {
@@ -53,4 +53,3 @@ img {
 button {
   cursor: pointer;
 }
-

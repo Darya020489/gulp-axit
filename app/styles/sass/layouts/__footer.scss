@@ -3,11 +3,11 @@
   padding-top: 35px;
   padding-bottom: 27px;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     padding-bottom: 30px;
   }
 
-  @media (max-width: 560px) {
+  @include breakpoint(sm) {
     padding-bottom: 45px;
   }
 
@@ -21,11 +21,11 @@
   &__link {
     margin-right: 35px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-right: 30px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-right: auto;
     }
 
@@ -38,12 +38,12 @@
     width: 53px;
     height: 53px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       width: 45px;
       height: 45px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       width: 26px;
       height: 26px;
     }
@@ -61,11 +61,11 @@
     margin-top: 28px;
     text-align: center;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-top: 38px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 42px;
     }
   }
@@ -76,7 +76,7 @@
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.5);
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       font-size: 14px;
       line-height: 1.1;
     }

@@ -2,22 +2,22 @@
   padding: 50px 0;
   background: var(--color-info);
 
-  @media (max-width: 560px) {
-    padding: 0 0 26px;
+  @include breakpoint(sm) {
+    padding-bottom: 26px;
   }
 
   &__row {
     margin-top: 79px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-top: 50px;
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md) {
       justify-content: center;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 24px;
     }
   }

@@ -2,21 +2,21 @@
   padding-top: 50px;
   padding-bottom: 58px;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     padding-bottom: 60px;
   }
 
-  @media (max-width: 560px) {
+  @include breakpoint(sm) {
     padding-bottom: 50px;
   }
 
   &__cards {
-    @media (max-width: 768px) {
+    @include breakpoint(md) {
       /* margin-top: 50px; */
       justify-content: center;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 50px;
     }
   }
@@ -25,11 +25,11 @@
     margin-top: 71px;
     text-align: center;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-top: 32px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 10px;
     }
   }
@@ -40,7 +40,7 @@
     margin: 0 auto;
     border-radius: 50%;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       width: 147px;
       height: 147px;
     }
@@ -54,7 +54,7 @@
     line-height: 1.4;
     text-transform: capitalize;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       padding: 28px 0;
       font-size: 18px;
     }
@@ -67,7 +67,7 @@
     font-size: 18px;
     line-height: 1.2;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-top: 9px;
       font-size: 14px;
       line-height: 1.1;

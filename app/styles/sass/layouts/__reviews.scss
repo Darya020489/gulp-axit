@@ -2,33 +2,33 @@
   padding-top: 50px;
   padding-bottom: 64px;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     padding-bottom: 57px;
   }
 
-  @media (max-width: 560px) {
+  @include breakpoint(sm) {
     padding-bottom: 30px;
   }
 
   &__row {
     margin-top: 83px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-top: 32px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 0;
     }
   }
 
   &__card {
-    @media (max-width: 768px) {
+    @include breakpoint(md) {
       margin-top: 24px;
       margin-bottom: 35px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-top: 24px;
       margin-bottom: 0;
     }
@@ -46,17 +46,17 @@
     background-color: var(--color-secondary-light);
     border-radius: 10px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       padding: 50px 26px;
       font-size: 14px;
       line-height: 1.1;
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md) {
       margin-bottom: 30px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       margin-bottom: 62px;
     }
 
@@ -68,7 +68,7 @@
       border: 10px solid transparent;
       border-top: 15px solid var(--color-secondary-light);
 
-      @media (max-width: 1200px) {
+      @include breakpoint(xl) {
         left: 65px;
       }
     }
@@ -84,7 +84,7 @@
     height: 70px;
     border-radius: 50%;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       width: 63px;
       height: 63px;
     }
@@ -93,7 +93,7 @@
   &__autor-text {
     padding-left: 30px;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       padding-left: 22px;
     }
   }
@@ -106,12 +106,12 @@
     line-height: 1.4;
     text-transform: capitalize;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       margin-bottom: 9px;
       font-size: 18px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       font-size: 14px;
     }
   }
@@ -121,11 +121,11 @@
     font-size: 18px;
     line-height: 1.2;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       font-size: 14px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       font-size: 13px;
     }
   }

@@ -16,6 +16,23 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Mobile-menu ================================================
+const headerBurger = document.querySelector(".header__burger");
+const headerNav = document.querySelector(".header__nav");
+const headerClose = document.querySelector('.header__close');
+
+headerBurger.addEventListener("click", function (event) {
+  headerBurger.classList.add("burger_closed");
+  headerNav.classList.add("header__nav_opened");
+  headerClose.classList.add("header__close_opened");
+});
+
+headerClose.addEventListener("click", function (event) {
+  headerBurger.classList.remove("burger_closed");
+  headerNav.classList.remove("header__nav_opened");
+  headerClose.classList.remove("header__close_opened");
+});
+
 // AOS init===============================================================================
 AOS.init();
 
@@ -77,7 +94,6 @@ tabs__link.forEach(function (btn) {
 
 
 document.getElementById("defaultOpen").click();
-
 
 
 

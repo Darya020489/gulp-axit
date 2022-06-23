@@ -1,74 +1,71 @@
 .section-head {
   padding-top: 54px;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     padding-top: 50px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--primary);
+
+    @include breakpoint(xl) {
+      margin-bottom: 32px;
+      font-size: 24px;
+    }
+
+    @include breakpoint(sm) {
+      margin-bottom: 25px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 1px;
+      margin: 54px auto 0;
+      background: var(--accent);
+
+      @include breakpoint(xl) {
+        width: 134px;
+        margin-top: 50px;
+      }
+
+      @include breakpoint(sm) {
+        width: 142px;
+        margin-top: 46px;
+      }
+    }
+  }
+
+  &_light &__title {
+    color: var(--color-light);
+  }
+
+  &_light &__title::after {
+    background: var(--color-light);
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--secondary);
+
+    @include breakpoint(xl) {
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  }
+
+  &_light &__subtitle {
+    color: var(--color-light);
+  }
 }
-
-&__title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: var(--primary);
-
-  @media (max-width: 1200px) {
-    margin-bottom: 32px;
-    font-size: 24px;
-}
-
-@media (max-width: 560px) {
-    margin-bottom: 25px;
-}
-
-&::after {
-  content: "";
-  display: block;
-  width: 170px;
-  height: 1px;
-  margin: 54px auto 0;
-  background: var(--accent);
-
-
-@media (max-width: 1200px) {
-    width: 134px;
-    margin-top: 50px;
-}
-
-@media (max-width: 560px) {
-    width: 142px;
-    margin-top: 46px;
-}
-}
-}
-
-&_light &__title {
-  color: var(--color-light);
-}
-
-&_light &__title::after {
-  background: var(--color-light);
-}
-
-&__subtitle {
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--secondary);
-
-  @media (max-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.1;
-}
-}
-
-&_light &__subtitle {
-  color: var(--color-light);
-}
-}
-
-

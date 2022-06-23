@@ -1,0 +1,27 @@
+.close {
+    width: 30px;
+    height: 30px;
+    z-index: 11;
+
+    // &_opened {
+    //   @include breakpoint(md) {
+    //     display: block;
+    //   }
+    // }
+
+    &__line {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: white;
+
+      &:first-child {
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
