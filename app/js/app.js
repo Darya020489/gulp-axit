@@ -41,12 +41,15 @@ var modal = document.getElementById("modal");
 var btn = document.getElementById("promo-btn");
 var span = document.getElementsByClassName("modal__close")[0];
 
+
 btn.onclick = function () {
   modal.style.display = "block";
+  document.body.classList.add("body_hidden");
 };
 
 span.onclick = function () {
   modal.style.display = "none";
+  document.body.classList.remove("body_hidden");
 };
 
 window.onclick = function (event) {

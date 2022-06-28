@@ -38,10 +38,23 @@ html {
 html.dark {
   background-color: rgba(49, 51, 65, 0.75);
   color: #c3acac;
+
+  .promo__title {
+    color: var(--accent);
+  }
+
+  .promo__btn {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
 }
 
 .body {
   scroll-behavior: smooth;
+
+  &_hidden {
+    overflow: hidden;
+  }
 }
 
 img {
