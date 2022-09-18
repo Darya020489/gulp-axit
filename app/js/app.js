@@ -19,19 +19,29 @@ document.addEventListener("scroll", () => {
 // Mobile-menu ================================================
 const headerBurger = document.querySelector(".header__burger");
 const headerNav = document.querySelector(".header__nav");
-const headerClose = document.querySelector('.header__close');
+const headerClose = document.querySelector(".header__close");
 
 headerBurger.addEventListener("click", function (event) {
   headerBurger.classList.add("burger_closed");
   headerNav.classList.add("header__nav_opened");
-  headerClose.classList.add("header__close_opened");
+  headerClose.classList.add("close_opened");
+});
+
+headerNav.addEventListener("click", function ({ target }) {
+  if (target.classList.contains("header__menu-link")) {
+    closeMenu();
+  }
 });
 
 headerClose.addEventListener("click", function (event) {
+  closeMenu();
+});
+
+function closeMenu() {
   headerBurger.classList.remove("burger_closed");
   headerNav.classList.remove("header__nav_opened");
-  headerClose.classList.remove("header__close_opened");
-});
+  headerClose.classList.remove("close_opened");
+}
 
 // AOS init===============================================================================
 AOS.init();
@@ -39,8 +49,7 @@ AOS.init();
 // MODAL-WINDOW=============================================================================
 var modal = document.getElementById("modal");
 var btn = document.getElementById("promo-btn");
-var span = document.getElementsByClassName("modal__close")[0];
-
+var span = document.querySelector(".modal__close");
 
 btn.onclick = function () {
   modal.style.display = "block";
@@ -53,7 +62,7 @@ span.onclick = function () {
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = "none";
   }
 };
@@ -62,43 +71,26 @@ window.onclick = function (event) {
 
 // Get all elements with class="tablinks" and remove the class "active"
 
-const tabs__link = document.querySelectorAll(".tabs__link");
-
-tabs__link.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-
+const tabsList = document.querySelector(".tabs__tab");
+const tabsCard = document.querySelectorAll(".tabs__card");
+console.log(tabsCard);
 
 
-    function openPage(evt, pageName) {
-      // Declare all variables
-      var i, tabs__card, tabs__link;
+for (let i = 1; i < tabsCard.length; i++) {
+  tabsCard[i].style.display = "none";
+}
 
-      // Get all elements with class="tabcontent" and hide them
-      tabs__card = document.getElementsByClassName("tabs__card");
-      for (i = 0; i < tabs__card.length; i++) {
-        tabs__card[i].style.display = "none";
-      }
+tabsList.addEventListener("click", ({ target }) => {
+  for (let i = 0; i < tabsCard.length; i++) {
+    tabsCard[i].style.display = "none";
+  }
 
-      tabs__link = document.getElementsByClassName("tabs__link");
-
-      for (i = 0; i < tabs__link.length; i++) {
-        tabs__link[i].className = tabs__link[i].className.replace(
-          " active",
-          ""
-        );
-      }
-
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(pageName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  });
+  let tabNum = target.id;
+  console.log(tabNum);
+  let activeTab = document.querySelector(`[data-num="${tabNum}"]`);
+  activeTab.style.display = "block";
+  console.log(activeTab);
 });
-
-
-document.getElementById("defaultOpen").click();
-
-
 
 // THEME===========================================================================================
 document.querySelector(".switch").addEventListener("change", (event) => {
@@ -108,14 +100,18 @@ document.querySelector(".switch").addEventListener("change", (event) => {
 });
 
 // smooth-scrolling==============================================================================
-const anchors = document.querySelectorAll('a[href*="#"]');
+const headerMenu = document.querySelector(".header__menu");
+const anchors = headerMenu.querySelectorAll(".header__menu-link");
+
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
-    const blockID = anchor.getAttribute("href").substr(1);
+    const blockID = anchor.getAttribute("href");
+    console.log(blockID);
 
-    document.getElementById(blockID).scrollIntoView({
+    let aaa = document.querySelector(blockID);
+    aaa.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
